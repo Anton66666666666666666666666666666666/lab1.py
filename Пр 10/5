@@ -1,0 +1,18 @@
+balance = 1000
+while True:
+    print('Введите 1, чтобы узнать свой баланс')
+    print('Введите 2, чтобы вывести 100,00 рублей')
+    print('Введите 3, чтобы пополнить баланс на 100,00 рублей')
+    print('Введите 4, чтобы выйти')
+    command = input('Выберите команду: ')
+    if command == '1':
+        print('Ваш баланс: ',balance)
+    if command == '2':
+        balance -= 100
+        print('Ваш баланс: ',balance)
+    if command == '3':
+        balance += 100
+        print('Ваш баланс: ',balance)
+    if command == '4':
+        print('Досвидания!')
+        break
