@@ -1,0 +1,12 @@
+total_sum = 0
+while True:
+    price = int(input("Введите цену товара (0 для завершения): "))
+    if price == 0:
+        break  # Завершаем цикл
+    if price < 0:
+        print("Ошибка цены")
+        continue
+    total_sum += price
+if total_sum > 1000:
+    total_sum *= 0.9
+print(f"Общая сумма к оплате:{total_sum: }")
